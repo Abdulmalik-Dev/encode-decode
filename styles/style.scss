@@ -1,0 +1,106 @@
+// Start The Global Ruls
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Estonia", "cursive";
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Zen Antique", serif;
+  background: linear-gradient(to left, #f1f8e9, #97c168);
+}
+
+:root {
+  --main-color: #9ccc65;
+}
+// End The Global Ruls
+// Start The Container
+.container {
+  padding: 50px 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  select {
+    padding: 3px 60px;
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    margin-bottom: 70px;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media (max-width: 300px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+
+  textarea {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    resize: none;
+
+    &::placeholder {
+      color: var(--main-color);
+    }
+
+    &:focus {
+      outline-color: var(--main-color);
+    }
+
+    @media (max-width: 300px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+
+  // The Result Area
+  .result {
+    margin: 30px 0;
+    text-align: center;
+
+    p {
+      color: var(--main-color);
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 300px;
+      height: 90px;
+      border: 2px solid var(--main-color);
+      text-align: center;
+      padding-top: 20px;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
+      resize: none;
+
+      @media (max-width: 300px) {
+        & {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// End The Container
